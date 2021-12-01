@@ -22,14 +22,28 @@
 
 <!-- ページの内容を入力 -->
 @section('content')
-<h2>Hello</h2>
+<h2>コミュニティ一覧</h2>
+<ul class="grid"> 
+    <li class="sample">
+        <img src="images/sea.jpg" alt="海" />
+        <div class="mask">
+            <div class="caption">きれいな海や！</div>
+        </div>
+    </li>
+    <li class="sample">
+        <img src="images/sea.jpg" alt="海" />
+        <div class="mask">
+            <div class="caption">きれいな海や！</div>
+        </div>
+    </li>
+    <li class="sample">
+        <img src="images/sea.jpg" alt="海" />
+        <div class="mask">
+            <div class="caption">きれいな海や！</div>
+        </div>
+    </li>
+</ul>
 
-<div class="sample">
-	<img src="images/sea.jpg" alt="海" />
-	<div class="mask">
-		<div class="caption">きれいな海や！</div>
-	</div>
-</div>
 
 @stop
 

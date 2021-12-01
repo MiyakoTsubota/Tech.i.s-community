@@ -10057,3 +10057,8 @@ h3 {
 	opacity:		1;	/* マスクを表示する */
 	padding-top:		80px;	/* ホバーで下にずらす */
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
