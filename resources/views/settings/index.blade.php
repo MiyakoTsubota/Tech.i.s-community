@@ -21,7 +21,7 @@
                         <div class="sub-title">プロフィール</div>
                     </div>
                     <div class="prf_link">
-                        <a class="ah" href="/settings/profile_edit.php"><h7>プロフィールを編集する</h7></a>
+                        <a class="ah" href=""><h7>プロフィールを編集する</h7></a>
                     </div>
                     <div class="prf1">
                         <h7>プロフィールを公開する</h7>
