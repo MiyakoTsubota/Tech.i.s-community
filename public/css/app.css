@@ -10062,3 +10062,30 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+
+
+/*
+* コミュニティー新規作成
+*/
+
+/*
+* 退会画面
+*/
+.card-body{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+
+.withdrawal-comment {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}

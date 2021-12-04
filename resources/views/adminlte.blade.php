@@ -3,10 +3,16 @@
 <!-- ページタイトルを入力 -->
 @section('title', 'Dashboard')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+@stop
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 <!-- ページの見出しを入力 -->
 @section('content_header')
-<!-- cssの呼び出し -->
-<link href="css/app.css" rel="stylesheet">
 <body>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-black">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
@@ -22,7 +28,7 @@
 
 <!-- ページの内容を入力 -->
 @section('content')
-<h2>コミュニティ一覧</h2>
+<h3 class="text-center">コミュニティ一覧</h3>
 <ul class="grid"> 
     <li class="sample">
         <img src="images/sea.jpg" alt="海" />
@@ -44,6 +50,20 @@
     </li>
 </ul>
 
+<!-- bodyのclassは上下左右中央寄せにするために付与しています -->
+<body class="d-flex align-items-center vh-100 justify-content-center">
+	<nav aria-label="Page navigation">
+		<ul class="pagination justify-content-center">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	</nav>
+</body>
+
+
 
 @stop
 
@@ -61,5 +81,5 @@
 
 {{-- Footer --}}
 @section('footer')
-TECH.I.S Community
+<p style="text-align:center">TECH.I.S Community</p>
 @stop
