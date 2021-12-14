@@ -1,5 +1,6 @@
 @extends('adminlte::page')
 @section('content')
+@section('title', 'new_community')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -32,7 +33,7 @@
                         </div>
                     </div>
                     <div style="text-align: center;">
-                        <button type="submit" class="btn btn-block btn-info">新規作成</button>
+                        <button type="submit" class="btn btn-block btn-info" onclick="location.href='/chat'">新規作成</button>
                     </div>
     </div>
 </body>

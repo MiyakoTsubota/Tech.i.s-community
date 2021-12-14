@@ -24,7 +24,7 @@
                         </div>
                 </div>
                 <div style="text-align: center;">
-                    <button type="submit" class="btn btn-block btn-info">退会する</button>
+                    <button type="submit" class="btn btn-block btn-info" onclick="location.href='/withdrawal_completion'">退会する</button>
                 </div>
 </div>
 @endsection

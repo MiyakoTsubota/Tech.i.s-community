@@ -1,7 +1,7 @@
 @extends('adminlte::page')
 
 <!-- ページタイトルを入力 -->
-@section('title', 'Dashboard')
+@section('title', 'HOME')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
