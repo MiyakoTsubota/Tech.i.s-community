@@ -14,12 +14,10 @@ class CreateChatsTable extends Migration
     public function up()
     {
         Schema::create('chats', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('user_name', 20)->default('noname');
-            $table->string('user_identifier', 20);
-            $table->string('message', 300);
-            $table->timestamp('created_at')->useCurrent()->nullable();
-            $table->timestamp('updated_at')->useCurrent()->nullable();
+            $table->increments('id');
+            $table->integer('user_id')->unsigned()->index();
+            $table->string('name');
+            $table->timestamps();
         });
     }
 

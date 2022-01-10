@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div style="text-align: center;">
-                        <button type="submit" class="btn btn-block btn-info" onclick="location.href='/chat'">新規作成</button>
+                        <button type="submit" class="btn btn-block btn-info" onclick="location.href='/chats'">新規作成</button>
                     </div>
     </div>
 </body>

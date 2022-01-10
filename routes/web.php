@@ -34,4 +34,16 @@ Route::get('/settings', [App\Http\Controllers\SettingsController::class, 'index'
 //プロフィール編集画面
 Route::get('/profile_edit', [App\Http\Controllers\Profile_editController::class, 'index'])->name('profile_edit');
 //チャット画面
-Route::get('/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('chat');
+Route::get('/chats', [App\Http\Controllers\ChatController::class, 'index'])->name('chats');
+Route::post('/chat', [App\Http\Controllers\ChatController::class, 'store'])->name('chat');
+//削除
+Route::delete('/chat/{chat}', [App\Http\Controllers\ChatController::class, 'destroy'])->name('/chat/{chat}');
+//編集
+// Route::get('/edit/{id}/', [App\Http\Controllers\ChatController::class, 'edit'])->name('/edit/{id}'); 
+// Route::patch('/edit/{id}/', [App\Http\Controllers\ChatController::class, 'edit_confirm'])->name('/edit/{id}'); 
+// Route::post('/edit/{id}/', [App\Http\Controllers\ChatController::class, 'edit_finish'])->name('/edit/{id}'); 
+
+//更新
+Route::get('/edit/{id}', [App\Http\Controllers\ChatController::class, 'edit_index']); //入力
+Route::patch('/edit/{id}', [App\Http\Controllers\ChatController::class, 'edit_confirm']); //確認
+Route::post('/edit/{id}', [App\Http\Controllers\ChatController::class, 'edit_finish']); //完了
