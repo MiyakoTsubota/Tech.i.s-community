@@ -18,7 +18,7 @@
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <h1 class="display-4 fw-normal">TECH.I.S Community</h1>
             <p class="lead fw-normal">さっそくコミュニティサイトを作ろう</p>
-            <a class="btn btn-outline-secondary" href="/new_community">作成する</a>
+            <a class="btn btn-outline-secondary" href="/chats">作成する</a>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -28,6 +28,7 @@
 
 <!-- ページの内容を入力 -->
 @section('content')
+<div class="d-none">
 <h3 class="text-center">コミュニティ一覧</h3>
 <ul class="grid"> 
     <li class="sample">
@@ -61,7 +62,9 @@
 			<li class="page-item"><a class="page-link" href="#">Next</a></li>
 		</ul>
 	</nav>
+</div>
 </body>
+
 
 
 

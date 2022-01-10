@@ -33,10 +33,7 @@
                     </td>
 
                     <!-- 編集ボタン -->
-                    <td>
-                        <a href="{{ url('/chats/edit/' . $chat->id) }}" class="btn btn-primary btn-sm">編集</a>
-                    </td>
-
+                    
                     <td>
                         <!-- 削除ボタン -->
                         <form action="{{ url('chat/'.$chat->id) }}" method="POST">
@@ -69,15 +66,15 @@
         <!-- チャット名 -->
         <div class="form-group"> 
             <label for="chat-name" class="col-sm-3 control-label">Chat</label>
+        </div>
 
+        <div class="form-group-text">
             <div class="col-sm-6">
                 <input type="text" name="name" id="chat-name" class="form-control" placeholder="メッセージ">
             </div>
-        </div>
         <!-- タスク追加ボタン -->
-        <div class="form-group">
             <div class="col-sm-offset-3 col-sm-6">
-                <button type="submit" class="btn btn-block btn-info">
+                <button type="submit" class="btn btn-block btn-info" style="width:150px;">
                     <i class="fa fa-plus"></i>チャットを投稿
                 </button>
             </div>

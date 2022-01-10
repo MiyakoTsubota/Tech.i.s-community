@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Chat',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -226,15 +226,15 @@ return [
 
     'menu' => [
         // Navbar items:
-        [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
-        ],
-        [
-            'type'         => 'fullscreen-widget',
-            'topnav_right' => true,
-        ],
+        // [
+        //     'type'         => 'navbar-search',
+        //     'text'         => 'search',
+        //     'topnav_right' => true,
+        // ],
+        // [
+        //     'type'         => 'fullscreen-widget',
+        //     'topnav_right' => true,
+        // ],
 
         // Sidebar items:
         // [
@@ -253,22 +253,22 @@ return [
         //     'label'       => 4,
         //     'label_color' => 'success',
         // ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'コミュニティ新規作成',
-            'url'  => '/new_community',
-            'icon' => '',
-        ],
-        [
-            'text' => '設定',
-            'url'  => '/settings',
-            'icon' => '',
-        ],
-        [
-            'text' => 'お問い合わせ',
-            'url'  => '',
-            'icon' => '',
-        ],
+        // ['header' => 'account_settings'],
+        // [
+        //     'text' => 'コミュニティ新規作成',
+        //     'url'  => '/new_community',
+        //     'icon' => '',
+        // ],
+        // [
+        //     'text' => '設定',
+        //     'url'  => '/settings',
+        //     'icon' => '',
+        // ],
+        // [
+        //     'text' => 'お問い合わせ',
+        //     'url'  => '',
+        //     'icon' => '',
+        // ],
         // [
         //     'text'    => 'multilevel',
         //     'icon'    => 'fas fa-fw fa-share',
